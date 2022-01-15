@@ -4,4 +4,4 @@ Interactive map of european languages with Leaflet.
 
 ![](app_v1.png)
 
-Link to app: [](https://melindafemminis.github.io/map-countries-europe/)
+Link to app: [https://melindafemminis.github.io/map-countries-europe/](https://melindafemminis.github.io/map-countries-europe/)
