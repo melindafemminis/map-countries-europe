@@ -1,0 +1,183 @@
+<html>
+  <head>
+    <meta charset="utf8" />
+    <title>Atlas: european languages</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="countries_europe.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet-src.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-search@2.3.7/dist/leaflet-search.src.css" />
+    <script src="https://unpkg.com/leaflet-search@2.3.7/dist/leaflet-search.src.js"></script>
+  </head>
+  <body>
+    <h1>The languages of Europe: an interactive map</h1>
+        
+    <div class="main">
+      <div id="map" class="carte-interactive"></div>
+      <div class="sidebar">
+        <div class="infobox">
+        <p>Which languages of spoken where ? This map shows the differents official languages of each country; 
+          some have one and others more. Search by language, by country of simply click on the map to explore.</p>
+        <b>Select a languages to highlight the countries where it is an official languages:</b>
+        </div>
+        <div class="radiobuttons">
+          <table>
+            <td>
+          <div>
+            <input type="radio" id="germanRadio" name="radioLang" value="Albanian"
+                   checked>
+            <label for="huey">Albanian</label>
+          </div>
+          <div>
+            <input type="radio" id="swedishRadio" name="radioLang" value="Belarussian">
+            <label for="louie">Belarussian</label>
+          </div>
+          <div>
+            <input type="radio" id="italianRadio" name="radioLang" value="Bulgarian">
+            <label for="dewey">Bulgarian</label>
+          </div>
+          <div>
+            <input type="radio" id="swedishRadio" name="radioLang" value="Bosnian">
+            <label for="louie">Bosnian</label>
+          </div>
+          <div>
+            <input type="radio" id="swedishRadio" name="radioLang" value="Croatian">
+            <label for="louie">Croatian</label>
+          </div>
+          <div>
+            <input type="radio" id="swedishRadio" name="radioLang" value="Czech">
+            <label for="louie">Czech</label>
+          </div>
+          <div>
+            <input type="radio" id="swedishRadio" name="radioLang" value="Danish">
+            <label for="louie">Danish</label>
+          </div>
+          <div>
+            <input type="radio" id="swedishRadio" name="radioLang" value="Dutch">
+            <label for="louie">Dutch</label>
+          </div>
+          <div>
+            <input type="radio" id="swedishRadio" name="radioLang" value="English">
+            <label for="louie">English</label>
+          </div>
+          <div>
+            <input type="radio" id="swedishRadio" name="radioLang" value="Estonian">
+            <label for="louie">Estonian</label>
+          </div>
+          <div>
+            <input type="radio" id="swedishRadio" name="radioLang" value="Finnish">
+            <label for="louie">Finnish</label>
+          </div>
+          <div>
+            <input type="radio" id="swedishRadio" name="radioLang" value="French">
+            <label for="louie">French</label>
+          </div>
+          <div>
+            <input type="radio" id="swedishRadio" name="radioLang" value="German">
+            <label for="louie">German</label>
+          </div>
+          <div>
+            <input type="radio" id="swedishRadio" name="radioLang" value="Greek">
+            <label for="louie">Greek</label>
+          </div>
+          <div>
+            <input type="radio" id="swedishRadio" name="radioLang" value="Hungarian">
+            <label for="louie">Hungarian</label>
+          </div>
+          <div>
+            <input type="radio" id="swedishRadio" name="radioLang" value="Icelandic">
+            <label for="louie">Icelandic</label>
+          </div>
+          <div>
+            <input type="radio" id="swedishRadio" name="radioLang" value="Irish">
+            <label for="louie">Irish</label>
+          </div>
+        </td>
+        <td>
+          <div>
+            <input type="radio" id="swedishRadio" name="radioLang" value="Italian">
+            <label for="louie">Italian</label>
+          </div>
+          <div>
+            <input type="radio" id="swedishRadio" name="radioLang" value="Latvian">
+            <label for="louie">Latvian</label>
+          </div>
+          <div>
+            <input type="radio" id="swedishRadio" name="radioLang" value="Lithuanian">
+            <label for="louie">Lithuanian</label>
+          </div>
+          <div>
+            <input type="radio" id="swedishRadio" name="radioLang" value="Macedonian">
+            <label for="louie">Macedonian</label>
+          </div>
+          <div>
+            <input type="radio" id="swedishRadio" name="radioLang" value="Norwegian">
+            <label for="louie">Norwegian</label>
+          </div>
+          <div>
+            <input type="radio" id="swedishRadio" name="radioLang" value="Polish">
+            <label for="louie">Polish</label>
+          </div>
+          <div>
+            <input type="radio" id="swedishRadio" name="radioLang" value="Portuguese">
+            <label for="louie">Portuguese</label>
+          </div>
+          <div>
+            <input type="radio" id="swedishRadio" name="radioLang" value="Romanian">
+            <label for="louie">Romanian</label>
+          </div>
+          <div>
+            <input type="radio" id="swedishRadio" name="radioLang" value="Romansh">
+            <label for="louie">Romansh</label>
+          </div>
+          <div>
+            <input type="radio" id="swedishRadio" name="radioLang" value="Russian">
+            <label for="louie">Russian</label>
+          </div>
+          <div>
+            <input type="radio" id="swedishRadio" name="radioLang" value="Serbian">
+            <label for="louie">Serbian</label>
+          </div>
+          <div>
+            <input type="radio" id="swedishRadio" name="radioLang" value="Slovak">
+            <label for="louie">Slovak</label>
+          </div>
+          <div>
+            <input type="radio" id="swedishRadio" name="radioLang" value="Slovenian">
+            <label for="louie">Slovenian</label>
+          </div>
+          <div>
+            <input type="radio" id="swedishRadio" name="radioLang" value="Spanish">
+            <label for="louie">Spanish</label>
+          </div>
+          <div>
+            <input type="radio" id="swedishRadio" name="radioLang" value="Swedish">
+            <label for="louie">Swedish</label>
+          </div>
+          <div>
+            <input type="radio" id="swedishRadio" name="radioLang" value="Turkish">
+            <label for="louie">Turkish</label>
+          </div>
+          <div>
+            <input type="radio" id="swedishRadio" name="radioLang" value="Ukrainian">
+            <label for="louie">Ukrainian</label>
+          </div>
+          </td>
+        </table>
+          <div>
+              <button class="allbuttons search" id="searchRadio" onclick="searchLangFunction()">See</button>
+          </div>
+          <div>
+            <button class="reset allbuttons" id="resetButton" onclick="resetFunction()">Reset</button>
+        </div>
+        </div>
+        <div class="copyright">
+          2022 © Melinda Femminis
+        </div>
+      </div>
+
+    </div>
+      
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    margin: 20px;
+  }
+  
+  .main {
+    position: relative;
+  }
+  .carte-interactive {
+    position: absolute;
+    top: 0;
+    left: 440px;
+    width: 800px; 
+    height: 700px; 
+    background-color: #999;
+    border: 1px solid #666;
+  }
+  
+  .sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 680px;
+    background-color: #f0f0f0;
+    border: 1px solid #666;
+    padding: 10px;
+  }
+
+  .allbuttons {
+    height: 30px;
+    width: 85%;
+    cursor: hand; cursor: pointer;
+    margin-left: 30px;
+    display: block;
+    margin: 10px 10px 10px 30px;
+
+  }
+
+  .search {
+    background-color: #008ccc;
+    color: #ffffff;
+    border: 1px solid #008ccc;
+  }
+  .search:hover {
+    background-color: #019ccc;
+  }
+  
+  .reset {
+    background-color: #fb2e01;
+    color: #ffffff;
+    border: 1px solid #fb2e01;
+  }
+  .reset:hover {
+    background-color: #db2e01;
+  }
+  .infobox {
+    margin: 30px 30px 10px 30px;
+  }
+  
+  table {
+    font-size: 10pt;
+    margin-left: 30px;
+  }
+  td {
+    min-width: 80px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #008ccc;
+  }
+  
+  a:visited {
+    color: #008ccc;
+  }
+  a:hover {
+    text-decoration: underline;
+    color: #006aaa;
+  }
+  
+  .copyright {
+    position: absolute;
+    bottom: 0;
+    font-size: 8pt;
+    margin-bottom: 10px;
+  }
+  
+  #coordonnees {
+    position: absolute;
+    left: 0;
+    top: 506px;
+    font-size: 11px;
+  }
+
+  .leaflet-container {
+    background-color: #aad3df;
+}
+
+.leaflet-overlay-pane svg g .over {
+    fill: #AAA;
+}
+
+.info {
+  padding: 6px 8px;
+  font: 14px/16px Arial, Helvetica, sans-serif;
+  background: white;
+  background: rgba(255,255,255,0.8);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+.info h4 {
+  margin: 0 0 5px;
+  color: #777;
+}
